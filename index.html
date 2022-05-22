@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bitmovin SDK - Getting Started WEB SDK</title>
+  <title>Demo các kỹ thuật giấu tin</title>
   <meta charset="UTF-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,7 @@
 <body>
 
 <!-- STEP 2 - Provide a player container element-->
+<h1>Demo ứng dụng của giấu tin</h1>
 <div id="my-player"></div>
 
 <script>
@@ -25,7 +26,7 @@ var playerConfig = {
   "analytics": {
     "key": 'e62165cf-de10-499e-b482-f1ebb80992e6',
     "videoId": 'Bitmovin Learning Lab',
-    "title": 'Lets Play Video'
+    "title": 'Introduce'
   }
 }
 var container = document.getElementById('my-player');
@@ -33,8 +34,8 @@ var player = new bitmovin.player.Player(container, playerConfig);
 
 //<!-- STEP 4 - Configure and load a Source for the player -->
 var sourceConfig = {
-  "title": "Default Demo Source Config",
-  "description": "Select another example in \"Step 4 - Load a Source\" to test it here",
+  "title": "Demo các kỹ thuật giấu tin",
+  "description": "Ứng dụng giấu tin",
   "dash": "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/mpds/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.mpd",
   "hls": "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8",
   "smooth": "https://test.playready.microsoft.com/smoothstreaming/SSWSS720H264/SuperSpeedway_720.ism/manifest",
